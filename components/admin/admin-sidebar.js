@@ -45,6 +45,7 @@ const Sidebar = () => {
             return (
               <Link href={item.link}>
                 <li
+                  key={item.title}
                   className={`${
                     router.pathname === item.link
                       ? 'bg-sidebar-item-bg rounded-3xl mx-5 py-2 px-3 my-2'
