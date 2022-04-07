@@ -1,30 +1,20 @@
-import Image from "next/image";
-import React, { useState, useRef } from "react";
+import Image from 'next/image';
+import React, { useState, useRef } from 'react';
 
 const Login = () => {
-<<<<<<< HEAD
-  const [nameInput, setEmailInput] = useState("");
-  const [passwordInput, setPasswordInput] = useState("");
-  const [emailError, setemailError] = useState(false);
-  const [passwordError, setpasswordError] = useState(false);
-
-  const emailRef = useRef("");
-  const passwordRef = useRef("");
-
-=======
-  const [nameInput, setEmailInput] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
   const [emailError, setemailError] = useState(false);
   const [passwordError, setpasswordError] = useState(false);
 
   const emailRef = useRef('');
   const passwordRef = useRef('');
->>>>>>> 5134baebd8e02372f2fae45bf9f39c31d85edeb3
+
   const handleSubmit = async () => {
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
+
     // emailRef.current.value = "";
-    passwordRef.current.value = "";
+    passwordRef.current.value = '';
     setEmailInput(email);
     setPasswordInput(password);
     if (
@@ -58,21 +48,21 @@ const Login = () => {
         <p>Email</p>
         <input
           className={`${
-            emailError ? "border-x-8 border-red-900" : ""
+            emailError ? 'border-x-8 border-red-900' : ''
           }px-3 py-2     focus:border-sky-500 focus:ring-sky-500 block w-full  sm:text-sm focus:ring-1`}
           type="text"
           ref={emailRef}
         />
-        <p className={!emailError && "invisible"}>Please enter valid email</p>
+        <p className={!emailError && 'invisible'}>Please enter valid email</p>
         <p className="mt-5">Password</p>
         <input
           type="text"
           className={`${
-            emailError ? "text-red-400" : ""
+            emailError ? 'text-red-400' : ''
           }px-3 py-2 bg-white border shadow-sm border-black   focus:border-sky-500 focus:ring-sky-500 block w-full  sm:text-sm focus:ring-1`}
           ref={passwordRef}
         />
-        <p className={!passwordError && "invisible"}>
+        <p className={!passwordError && 'invisible'}>
           Please enter valid password
         </p>
         <div className="">
