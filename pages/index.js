@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <div className="relative">
         <Banner image="/images/home-images/homeBanner.jpg" />
-        <div className="absolute top-24 left-48 text-white w-1/4 space-y-2">
+        <div className="hidden md:absolute md:top-24 md:left-48 md:text-white md:w-1/4 md:space-y-2">
           <button className="border-2 border-white rounded-full px-5 py-1 font-semibold">
             Heal your Life
           </button>
