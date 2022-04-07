@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "img": "https://images.unsplash.com/photo-1647872902128-a3b7cbf86537?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "title": "The quick brown fox...",
+      "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabovel veritatis, dolores quo quos reiciendis consequatur fugitcupiditate! Culpa, dolor ea! Fuga aut error dolorum.Lorem ipsumdolor sit amet consectetur, adipisicing elit.Explicabo vel veritatis, dolorequo quos reiciendis consequatur fugit cupiditate!Culpa, dolor ea! Fuga aut error dolorum.Lorem ipsum dolor sit ametconsectetur, adipisicing elit.Explicabo vel veritatis, dolores quoquos reiciendis consequatur fugit cupiditate! Culpa, dolor ea! Fugaaut error dolorum.Lorem ipsum dolor sit amet consectetur"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1647891941028-a479768582f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "title": "The quick brown fox...",
+      "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabovel veritatis, dolores quo quos reiciendis consequatur fugitcupiditate! Culpa, dolor ea! Fuga aut error dolorum.Lorem ipsumdolor sit amet consectetur, adipisicing elit.Explicabo vel veritatis, dolorequo quos reiciendis consequatur fugit cupiditate!Culpa, dolor ea! Fuga aut error dolorum.Lorem ipsum dolor sit ametconsectetur, adipisicing elit.Explicabo vel veritatis, dolores quoquos reiciendis consequatur fugit cupiditate! Culpa, dolor ea! Fugaaut error dolorum.Lorem ipsum dolor sit amet consectetur",
+      "isRight": "true"
+    },
+    {
+      "img": "https://images.unsplash.com/photo-1647996589784-50194c3f9b28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "title": "The quick brown fox...",
+      "para": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabovel veritatis, dolores quo quos reiciendis consequatur fugitcupiditate! Culpa, dolor ea! Fuga aut error dolorum.Lorem ipsumdolor sit amet consectetur, adipisicing elit.Explicabo vel veritatis, dolorequo quos reiciendis consequatur fugit cupiditate!Culpa, dolor ea! Fuga aut error dolorum.Lorem ipsum dolor sit ametconsectetur, adipisicing elit.Explicabo vel veritatis, dolores quoquos reiciendis consequatur fugit cupiditate! Culpa, dolor ea! Fugaaut error dolorum.Lorem ipsum dolor sit amet consectetur"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import Sidebar from '../../components/admin/admin-sidebar';
+const Feedback = () => {
+  return (
+    <div className="flex">
+      <Sidebar />
+      <div className="w-3/4">This is feedback</div>
+    </div>
+  );
+};
+export default Feedback;
