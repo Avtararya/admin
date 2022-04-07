@@ -5,7 +5,7 @@ const NewsLetter = () => {
     <div
       className="py-14 lg:py-32 h-96 flex flex-col items-center lg:items-start lg:pl-20 space-y-5"
       style={{
-        backgroundImage: `url(${'http://divineurja.com/wp-content/uploads/2022/03/Car-Repairbg_1_.png'})`,
+        backgroundImage: `url(${'/images/newsletter-image.png'})`,
       }}
     >
       <h1 className="text-white text-lg font-bold sm:text-xl md:text-2xl">
