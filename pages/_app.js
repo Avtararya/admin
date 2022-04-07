@@ -1,4 +1,4 @@
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/layout/layout';
 import '../styles/globals.css';
 import { useRouter } from 'next/router';
 function MyApp({ Component, pageProps }) {
