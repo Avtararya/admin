@@ -1,8 +1,8 @@
-import Input from "./input-field";
+import Input from './input-field';
 // sm:pb-17 md:pt-20 md:pb-24
 const ContactForm = () => {
   return (
-    <div className="shadow-xl text-white w-3/5 rounded-lg py-4 bg-[#f9ccab] flex flex-col items-center sm:pt-15 ">
+    <div className="h-max shadow-xl text-white w-3/5 rounded-lg py-4 bg-[#f9ccab] flex flex-col items-center sm:pt-15 ">
       <div className="w-4/5 flex flex-col items-center space-y-4">
         <h1 className="text-lg  font-bold sm:text-xl md:text-2xl">
           Submit your Feedback
