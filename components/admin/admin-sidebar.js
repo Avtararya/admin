@@ -43,9 +43,8 @@ const Sidebar = () => {
         <ul className="cursor-pointer">
           {dashBoardItems.map((item) => {
             return (
-              <Link href={item.link}>
+              <Link href={item.link} key={item.title}>
                 <li
-                  key={item.title}
                   className={`${
                     router.pathname === item.link
                       ? 'bg-sidebar-item-bg rounded-3xl mx-5 py-2 px-3 my-2'
