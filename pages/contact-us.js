@@ -1,36 +1,42 @@
-import { Fragment } from 'react';
-import NewsLetter from '../components/multiusable/news-letter';
-import ContactForm from '../components/contact-us/contact-form';
-import Social from '../components/contact-us/social-section';
-import SocialContact from '../components/contact-us/middle-section';
+import { Fragment, useState } from "react";
+import NewsLetter from "../components/multiusable/news-letter";
+import { AnimatePresence } from "framer-motion";
+import SocialContact from "../components/contact-us/middle-section";
+import ContactModal from "../components/layout/contact-modal";
 
 const ContactUs = () => {
+  const [modal, setModal] = useState(false);
+
+  const openModal = () => {
+    setModal(true);
+    // document.body.style.overflow = 'hidden';
+  };
+
   return (
     <Fragment>
-      <div className="hidden lg:block">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="flex-1 flex w-full justify-center">
-            <ContactForm />
-          </div>
-          <img
-            className="flex-1"
-            src="/images/contact-us-images/contact-us-banner.jpg"
-            alt=""
-          />
+      <div className={` flex items-center bg-white h-[calc(100vh-80px)]`}>
+        <div className="z-10 flex-1 flex justify-center">
+          {modal ? (
+            <ContactModal setModal={setModal} />
+          ) : (
+            <div
+              className="  text-white w-72 h-10 flex items-center justify-center  bg-gradient-to-r from-cyan-500 to-blue-400  border-b-0 
+              shadow-xl shadow-gray-600"
+            >
+              <button onClick={openModal}>Contact US</button>
+            </div>
+          )}
         </div>
-      </div>
-      <div className="lg:hidden">
         <img
           className="flex-1"
-          src="/images/contact-us-images/contact-us-banner.jpg"
+          height="50px"
+          width="30px"
+          src="/images/contact-us-images/contact-banner.png"
           alt=""
         />
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="flex-1 flex w-full justify-center">
-            <ContactForm />
-          </div>
-        </div>
       </div>
+
+      <AnimatePresence initial={false} exitBeforeEnter={true}></AnimatePresence>
 
       <SocialContact />
       <NewsLetter />
@@ -39,3 +45,6 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
+
+// shadow-purple-900/50
+// hover: bg-gradient-to-br focus:ring-4 focus:ring-purple-600 dark:focus:ring-purple-800

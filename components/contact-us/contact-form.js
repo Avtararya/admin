@@ -1,28 +1,42 @@
-import Input from './input-field';
-// sm:pb-17 md:pt-20 md:pb-24
-const ContactForm = () => {
+import Input from "./input-field";
+
+const ContactForm = ({ setModal }) => {
   return (
-    <div className="h-max shadow-xl text-white w-3/5 rounded-lg py-4 bg-[#f9ccab] flex flex-col items-center sm:pt-15 ">
-      <div className="w-4/5 flex flex-col items-center space-y-4">
-        <h1 className="text-lg  font-bold sm:text-xl md:text-2xl">
-          Submit your Feedback
-        </h1>
-        <form className="w-full flex flex-col items-center space-y-2">
-          <Input type="text" name="name" placeHolder="Name" />
-          <Input type="email" name="email" placeHolder="Email Address" />
-          <Input type="number" name="number" placeHolder="Phone Number" />
-          <textarea
-            className="w-full h-20 px-3 outline-none text-black"
-            placeholder="Feedback"
-            name="feedback"
-          ></textarea>
-          <button className="bg-[#d37170] text-white mt-2 py-2 px-5 text-xs sm:py-4 sm:px-8">
-            JOIN NOW
-          </button>
+    <div className="bg-gray-700 relative flex justify-center h-[90vh] 2xl:h-[80vh] w-[40vw] ">
+      <div className="bg-white absolute top-[25%] px-10 py-10 h-[60vh] 2xl:h-[50vh] w-[45vw] shadow-lg border-0 ">
+        <i className="fa-solid fa-xmark" onClick={() => setModal(false)} />
+        <form>
+          <div className="flex  w-full">
+            <div className="flex-1">
+              <div className="mb-10">
+                <h1 className="text-gray-400 font-bold text-4xl">CONTACT US</h1>
+              </div>
+              <div>
+                <label htmlFor="name" className="font-semibold text-gray-400">
+                  NAME
+                </label>
+                <Input />
+                <label htmlFor="email" className="font-semibold text-gray-400">
+                  E-MAIL
+                </label>
+                <Input />
+              </div>
+            </div>
+            <div className="h-full -mr-[20%]">
+              <img
+                className="flex-1 h-48"
+                src="/images/contact-us-images/location.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <label htmlFor="message" className="font-semibold text-gray-400">
+            MESSAGE
+          </label>
+          <Input />
         </form>
       </div>
     </div>
   );
 };
-
 export default ContactForm;
