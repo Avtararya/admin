@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     // <div className="fixed z-50 top-0">
     <nav
-      className="flex top-0  items-center justify-between hover: px-16 sticky z-20  text-white bg-cyan-500 border-b-0 shadow"
+      className="flex top-0  items-center justify-between hover: px-16 sticky z-20  text-white bg-black border-b-0 shadow"
       style={{ height: navHeight }}
     >
       <div className="cursor-pointer">LOGO</div>
