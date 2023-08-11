@@ -1,4 +1,4 @@
-import Sidebar from '../../components/admin/admin-sidebar';
+import Sidebar from "../../components/admin/admin-sidebar";
 
 const AddUser = () => {
   return (
